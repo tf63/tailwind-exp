@@ -1,20 +1,11 @@
-### react template
+### tailwindcssで遊ぶ
 
+### Reactへのtailwindcssの導入
+参考 https://qiita.com/y_kato_eng/items/439dae65ba13d050c91e
 ```
-    # パッケージのインストール
-    pnpm i
-    # 開発サーバーの立ち上げ
-    pnpm dev
+    # ライブラリのインストール
+    pnpm install -D tailwindcss postcss autoprefixer
+    # init
+    pnpx tailwindcss init -p
 ```
 
-`vite.config.ts`をいじる
-
-```
-    export default defineConfig({
-    plugins: [react()],
-        server: {
-            host: true,
-        },
-    });
-
-```
